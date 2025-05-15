@@ -1,9 +1,24 @@
-import './App.css'
+
+import Input from "./component/todos-input"
+import Apps from "./App.module.css"
+
+
 
 export default function App() {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
+    <>
+
+      <div className='parent'>
+
+        <div className='child-1'>
+
+          <Input/>
+
+          
+        </div>
+      
+      </div>
+    </>
   )
 }
+

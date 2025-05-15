@@ -1,0 +1,17 @@
+body{
+
+  background-color: yellow;
+}
+
+.parent{
+
+  
+}
+
+.child-1{
+
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
