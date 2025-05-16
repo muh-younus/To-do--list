@@ -1,11 +1,33 @@
-import react from "react";
+import react, { useState } from "react";
 
 
-function Input(){
+function Input(props){
+
+    const [inputTask,setinputTask] = useState("");
 
   return(
+      <>
 
-      <input type="text" placeholder="Enter Your Task" className="input-box" />
+          <div className="input-section">
+
+      <input type="text" placeholder="Enter Your Task"  className ="input-field" 
+          onChange = { e => {
+                setinputTask(e.target.value);
+              value={inputTask}
+            }}/>
+           
+              
+      <button className = 'add-btn' type='button'
+         onClick = {()=>{
+             props.addList(inputTask)
+             setinputTask("");
+         }} 
+          >Add</button>
+
+                
+    
+          </div>
+     </>
 
 
     
