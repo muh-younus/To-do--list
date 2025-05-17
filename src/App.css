@@ -1,6 +1,6 @@
 body{
 
-  background-color: red;
+  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +8,12 @@ body{
   
 }
 .parent{
-  background-color: gray;
+  background-color: #6d5454;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 
  
  
@@ -28,3 +29,29 @@ body{
  border-radius: 10px;
   
 }
+
+.input-field{
+
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-right: 10px
+}
+
+.add-btn{
+
+  width: 100px;
+  height:40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.icon{
+
+  color: black;
+  margin-left: 0px;
+  cursor: pointer;
+}
+

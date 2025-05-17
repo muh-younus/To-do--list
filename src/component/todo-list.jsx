@@ -8,7 +8,7 @@ function TodoItems(props){
     <>
     <li className ="list-item">
     -Task-2
-      <span className="del-icon"><i className="fa-solid fa-trash-can"></i></span>
+      <span className = "icon"><i className="fa-solid fa-trash"></i></span>
     </li>
     </>
   )
