@@ -11,10 +11,10 @@ function Input(props){
 
           <div className="input-section">
 
-      <input type="text" placeholder="Enter Your Task"  className ="input-field" 
+      <input type="text" placeholder="Enter Your Task"  value={inputTask} className ="input-field" 
           onChange = { e => {
                 setinputTask(e.target.value);
-              value={inputTask}
+              
             }}/>
            
               

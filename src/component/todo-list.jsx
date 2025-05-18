@@ -7,8 +7,12 @@ function TodoItems(props){
 
     <>
     <li className ="list-item">
-    -Task-2
-      <span className = "icon"><i className="fa-solid fa-trash"></i></span>
+      {props.task}
+      <span className = "icon"><i className="fa-solid fa-trash icon-delete" 
+    onClick={()=>{
+
+      props.delete(props.index)
+      }}></i></span>
     </li>
     </>
   )

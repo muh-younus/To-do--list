@@ -15,6 +15,13 @@ const [listTodo, setlistTodo] = useState([]);
 
     setlistTodo([...listTodo,inputTask]);
   }
+
+  let deleteList = (k) =>{
+
+    let newlistTodo = [...listTodo];
+    newlistTodo.splice(k,1);
+    setlistTodo([...newlistTodo]);
+  }
   return (
     <>
 
@@ -23,7 +30,17 @@ const [listTodo, setlistTodo] = useState([]);
         <div className='child-1'>
 
           <Input addList = {addList}/>
-        <TodoList addList = {addList}/>
+
+          {
+            listTodo.map((TodoItems,i)=> {
+
+              return(
+
+    <TodoList key = {i} index={i} task = {TodoItems} delete={deleteList}/>
+                )
+              
+            })
+          }
 
           
         </div>
